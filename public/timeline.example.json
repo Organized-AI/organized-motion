@@ -1,0 +1,14 @@
+{
+  "briefId": "brief_example",
+  "aspect": "9:16",
+  "totalDuration": 22.0,
+  "clips": [
+    { "id": "gen_01", "beat": "hook",      "src": "/asset/raw/brief_example/gen_01.mp4", "start": 0.0,  "duration": 1.5, "score": 88, "caption": "Your gate runs <em>before</em> the render" },
+    { "id": "gen_02", "beat": "evidence",  "src": "/asset/raw/brief_example/gen_02.mp4", "start": 1.5,  "duration": 3.5, "score": 76, "caption": "Every shot indexed on arrival" },
+    { "id": "gen_03", "beat": "mechanism", "src": "/asset/raw/brief_example/gen_03.mp4", "start": 5.0,  "duration": 5.0, "score": 71, "caption": "Score, then <em>compose</em>" },
+    { "id": "gen_04", "beat": "value",     "src": "/asset/raw/brief_example/gen_04.mp4", "start": 10.0, "duration": 6.5, "score": 58, "caption": "Bad generations die cheap" },
+    { "id": "gen_05", "beat": "payoff",    "src": "/asset/raw/brief_example/gen_05.mp4", "start": 16.5, "duration": 4.5, "score": 91, "caption": "One brief in, three aspects out" },
+    { "id": "gen_06", "beat": "cta",       "src": "/asset/raw/brief_example/gen_06.mp4", "start": 21.0, "duration": 1.0, "score": 84, "caption": "<em>organizedai.vip</em>" }
+  ],
+  "brand": { "bg": "#050608", "accent": "#B7FF3C", "warn": "#FFCC4D", "font": "JetBrains Mono" }
+}

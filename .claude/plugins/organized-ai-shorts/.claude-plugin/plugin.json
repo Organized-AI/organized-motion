@@ -1,0 +1,8 @@
+{
+  "name": "organized-ai-shorts",
+  "version": "0.2.0",
+  "description": "Short-form video production for Organized AI. Reference ingestion and variation, plus the Organized Motion generation pipeline: Higgsfield and Meshy generation, TwelveLabs gating, GSAP composition, HyperFrames render.",
+  "author": { "name": "Jordaaan", "email": "jordan@bluehighlightedtext.com" },
+  "homepage": "https://github.com/Organized-AI/organized-motion",
+  "keywords": ["video", "shorts", "reels", "twelvelabs", "higgsfield", "meshy", "gsap", "hyperframes", "cloudflare"]
+}

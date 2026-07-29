@@ -1,0 +1,58 @@
+name = "organized-motion"
+main = "src/index.ts"
+compatibility_date = "2026-07-01"
+compatibility_flags = ["nodejs_compat"]
+account_id = "691fe25d377abac03627d6a88d3eeac9"
+
+# Workers Assets. Never Cloudflare Pages.
+[assets]
+directory = "./public"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "MOTION_DB"
+database_name = "organized-motion"
+database_id = "REPLACE_AFTER_WRANGLER_D1_CREATE"
+
+[[r2_buckets]]
+binding = "MOTION_ASSETS"
+bucket_name = "organized-motion-assets"
+
+[[kv_namespaces]]
+binding = "MOTION_CACHE"
+id = "REPLACE_AFTER_WRANGLER_KV_CREATE"
+
+[[queues.producers]]
+binding = "MOTION_JOBS"
+queue = "motion-jobs"
+
+[[queues.consumers]]
+queue = "motion-jobs"
+max_batch_size = 5
+max_batch_timeout = 30
+max_retries = 3
+dead_letter_queue = "motion-jobs-dlq"
+
+[[durable_objects.bindings]]
+name = "RENDER_SESSION"
+class_name = "RenderSession"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["RenderSession"]
+
+[vars]
+HIGGSFIELD_BASE_URL = "https://platform.higgsfield.ai"
+MESHY_BASE_URL = "https://api.meshy.ai/openapi/v2"
+TWELVELABS_BASE_URL = "https://api.twelvelabs.io/v1.3"
+ARTLIST_BASE_URL = "https://developer.artlist.io"
+MOTION_COST_CEILING_CREDITS = "500"
+GTM_CONTAINER_ID = "GTM-T3SL8JPK"
+GA4_MEASUREMENT_ID = "G-5CTH745T50"
+
+[triggers]
+crons = ["0 7 * * *"]
+
+[observability]
+enabled = true

@@ -1,0 +1,25 @@
+{
+  "name": "organized-motion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Creative asset pipeline: Higgsfield + OpenArt + Meshy + Artlist + TwelveLabs, composed with GSAP and rendered by HyperFrames.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "db:migrate": "wrangler d1 migrations apply organized-motion --remote",
+    "db:migrate:local": "wrangler d1 migrations apply organized-motion --local",
+    "bootstrap": "bash scripts/bootstrap-cloudflare.sh",
+    "render": "hyperframes render public/index.html --out dist/",
+    "qa": "bash scripts/qa/verify-pipeline.sh"
+  },
+  "dependencies": {
+    "hono": "^4.12.32"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260729.1",
+    "typescript": "^5.7.2",
+    "wrangler": "^4.115.0"
+  }
+}
