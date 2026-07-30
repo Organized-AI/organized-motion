@@ -45,3 +45,7 @@ open "https://motion.organizedai.vip/?brief=brief_xxx"
 
 See `ARCHITECTURE/system-design.md` for the full picture and
 `PLANNING/implementation-roadmap.md` for phase order.
+
+## Reference templates
+
+- `PLANNING/youtube-cartoon-channel-base-template.md` for a reusable channel-production template distilled from a source video into an Organized Motion-friendly operating pattern.
