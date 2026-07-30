@@ -45,3 +45,7 @@ open "https://motion.organizedai.vip/?brief=brief_xxx"
 
 See `ARCHITECTURE/system-design.md` for the full picture and
 `PLANNING/implementation-roadmap.md` for phase order.
+
+## Reference templates
+
+- `PLANNING/youtube-anime-countdown-style-template.md` for a source-grounded WatchMojo-style countdown template that captures the actual editorial anime-listicle grammar instead of over-designing it as a generative motion piece.
