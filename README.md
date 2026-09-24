@@ -45,3 +45,9 @@ open "https://motion.organizedai.vip/?brief=brief_xxx"
 
 See `ARCHITECTURE/system-design.md` for the full picture and
 `PLANNING/implementation-roadmap.md` for phase order.
+
+---
+
+Guide: [guide.organizedai.vip/synter-gap-plan/](https://guide.organizedai.vip/synter-gap-plan/)
+
+Maintained by Jordaaan Hill ([LinkedIn](https://www.linkedin.com/in/jordaaanhill)).
